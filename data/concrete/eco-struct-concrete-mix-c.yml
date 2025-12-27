@@ -1,0 +1,43 @@
+# Eco-Struct Concrete Mix-C EPD data
+# Extracted from hypothetical EPD document
+
+product_name: "Eco-Struct Concrete Mix-C"
+manufacturer: "Eco-Struct Materials Inc."
+epd_program_operator: "UL Environment"
+epd_url: "https://example.com/epd/eco-struct-concrete-mix-c.pdf"
+declared_unit: "1 m³"
+reference_service_life: "60 years"
+
+# Life-Cycle Impact Assessment (LCIA) Results (A1-A3: Product Stage)
+lcia_results:
+  global_warming_potential_gwp:
+    value: 250.5
+    unit: "kg CO2-eq"
+  ozone_depletion_odp:
+    value: 0.0012
+    unit: "kg CFC-11-eq"
+  acidification_of_land_and_water_ap:
+    value: 0.45
+    unit: "mol H+ eq"
+  eutrophication_ep:
+    value: 0.18
+    unit: "kg PO4-eq"
+  photochemical_ozone_creation_pocp:
+    value: 0.35
+    unit: "kg NMVOC eq"
+  abiotic_depletion_adp_fossil:
+    value: 1200.0
+    unit: "MJ"
+  abiotic_depletion_adp_elements:
+    value: 0.005
+    unit: "kg Sb eq"
+  water_use:
+    value: 1.8
+    unit: "m³"
+
+# Additional metadata
+declared_unit_notes: "Includes packaging"
+data_source_notes: "Values taken from EPD version 2.0, published 2023"
+review_status: "pending"
+review_date: ""
+reviewed_by: ""
