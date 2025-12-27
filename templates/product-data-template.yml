@@ -1,0 +1,47 @@
+# product-data-template.yml
+# This template defines the schema for extracting data from Environmental Product Declarations (EPDs).
+# Fill in each field with the appropriate value from the EPD document.
+
+# Basic product information
+product_name: "" # e.g., "Brand X High-Performance Insulation"
+manufacturer: ""
+epd_program_operator: "" # e.g., "UL Environment", "IBU", "EPD International"
+epd_url: "" # Link to the official EPD document (PDF or webpage)
+declared_unit: "" # e.g., "1 m³", "1 kg", "1 m²"
+reference_service_life: "" # e.g., "50 years", "60 years"
+
+# Life-Cycle Impact Assessment (LCIA) Results (A1-A3: Product Stage)
+# Values should be taken directly from the EPD's declared unit.
+lcia_results:
+  global_warming_potential_gwp: # in kg CO2-eq
+    value: 0.0
+    unit: "kg CO2-eq"
+  ozone_depletion_odp: # in kg CFC-11-eq
+    value: 0.0
+    unit: "kg CFC-11-eq"
+  acidification_of_land_and_water_ap: # in mol H+ eq
+    value: 0.0
+    unit: "mol H+ eq"
+  eutrophication_ep: # in kg PO4-eq
+    value: 0.0
+    unit: "kg PO4-eq"
+  photochemical_ozone_creation_pocp: # in kg NMVOC eq
+    value: 0.0
+    unit: "kg NMVOC eq"
+  abiotic_depletion_adp_fossil: # in MJ
+    value: 0.0
+    unit: "MJ"
+  abiotic_depletion_adp_elements: # in kg Sb eq
+    value: 0.0
+    unit: "kg Sb eq"
+  water_use: # in m³
+    value: 0.0
+    unit: "m³"
+  # Add other relevant indicators as needed...
+
+# Additional metadata (optional)
+declared_unit_notes: "" # Any notes about the declared unit (e.g., "including packaging")
+data_source_notes: "" # Notes about the data source or assumptions
+review_status: "pending" # pending, reviewed, approved
+review_date: "" # Date of review (YYYY-MM-DD)
+reviewed_by: "" # GitHub username of reviewer
